@@ -1,6 +1,10 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 export default function SavingsBalanceCard() {
+  const router = useRouter();
+
   return (
     <div className="relative h-[163px] w-full max-w-[358px] overflow-hidden rounded-[19px] bg-white">
       {/* Settings icon */}
@@ -58,7 +62,10 @@ export default function SavingsBalanceCard() {
 
         {/* Deposit button */}
         <div className="flex flex-col items-center gap-1">
-          <button className="flex h-[40.515px] w-[40.515px] items-center justify-center rounded-full bg-[#424de7] transition-colors hover:bg-[#3640c7] cursor-pointer">
+          <button 
+            className="flex h-[40.515px] w-[40.515px] items-center justify-center rounded-full bg-[#424de7] transition-colors hover:bg-[#3640c7] cursor-pointer"
+            onClick={() => router.push('/invest')}
+          >
             <Image
               src="/assets/icons/deposit-icon.svg"
               alt="Deposit"
