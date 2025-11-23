@@ -56,7 +56,9 @@ Install dependencies
 Bash
 
 npm install
+
 # or
+
 pnpm install
 Run the development server
 
@@ -66,6 +68,7 @@ npm run dev
 Open in Simulator Open http://localhost:3000 in the MiniKit Simulator to test the World ID verification flow.
 
 🗺️ Roadmap
+
 Q4 2025 (Now): Hackathon MVP with Mock Vault Architecture.
 
 Q1 2026: Mainnet Launch on World Chain with Live Morpho Blue integration.
@@ -73,12 +76,12 @@ Q1 2026: Mainnet Launch on World Chain with Live Morpho Blue integration.
 Q3 2026: Superchain Aggregation. Leveraging the OP Stack to aggregate liquidity from Base (Aave/Compound) natively without bridging friction.
 
 👥 Team
-Stefano: Product & Strategy
 
-Renzo: Smart Contracts & Backend
+Stefano Cintioli: Product & Strategy
 
-Joaco: Frontend & MiniKit Integration
+Renzo Banegas: Smart Contracts & Backend
 
-Mica: UX/UI Design
+Joaquin Cortez: Frontend & MiniKit Integration
+
 
 Built with ❤️ for the World ecosystem.
