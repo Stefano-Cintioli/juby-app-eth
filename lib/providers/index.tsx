@@ -21,8 +21,15 @@ export default function ClientProviders({
   children,
   session,
 }: ClientProvidersProps) {
+  // Get World App ID from environment variable
+  const appId = process.env.NEXT_PUBLIC_WORLD_APP_ID || '';
+
+  if (!appId) {
+    console.error('NEXT_PUBLIC_WORLD_APP_ID is not configured. MiniKit functionality will not work.');
+  }
+
   return (
-    <MiniKitProvider>
+    <MiniKitProvider props={{ appId }}>
       <SessionProvider session={session}>{children}</SessionProvider>
     </MiniKitProvider>
   );
