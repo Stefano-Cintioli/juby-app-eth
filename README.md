@@ -51,23 +51,21 @@ This project was built from scratch during **ETHGlobal Devconnect 2025**.
    ```bash
    git clone [https://github.com/Stefano-Cintioli/juby-app-eth.git](https://github.com/Stefano-Cintioli/juby-app-eth.git)
    cd juby-app-eth
-Install dependencies
 
-Bash
-
+2. **Instal Dependencies**
 npm install
-
 # or
-
 pnpm install
-Run the development server
 
-Bash
-
+3. **Run the developer server**
 npm run dev
-Open in Simulator Open http://localhost:3000 in the MiniKit Simulator to test the World ID verification flow.
+# or
+pnpm dev
 
-🗺️ Roadmap
+4. **Open in Simulator**
+Open http://localhost:3000 in the MiniKit Simulator to test the World ID verification flow.
+
+**🗺️ Roadmap**
 
 Q4 2025 (Now): Hackathon MVP with Mock Vault Architecture.
 
@@ -75,7 +73,7 @@ Q1 2026: Mainnet Launch on World Chain with Live Morpho Blue integration.
 
 Q3 2026: Superchain Aggregation. Leveraging the OP Stack to aggregate liquidity from Base (Aave/Compound) natively without bridging friction.
 
-👥 Team
+**👥 Team**
 
 Stefano Cintioli: Product & Strategy
 
