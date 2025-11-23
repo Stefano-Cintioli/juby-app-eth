@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Markdown
 
-## Getting Started
+# 🛂 Juby Passport
 
-First, run the development server:
+> **Volatility to Stability. Verified on World Chain.**
+> The first Self-Custody Retirement Mini App for the Freelance Economy.
 
-```bash
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://juby-app-eth.vercel.app)
+[![World Chain](https://img.shields.io/badge/Built_on-World_Chain-red?style=for-the-badge)](https://worldcoin.org/world-chain)
+
+## 🦁 The Problem
+In Latin America, the freelance workforce is booming, but financially naked. They earn in crypto or volatile tokens like WLD, but:
+1.  **Inflation** eats traditional pensions.
+2.  **Volatility** causes panic-selling of grants.
+3.  **Crypto Wallets** are built for trading, not saving.
+
+Result: A generation of high-earners with **zero long-term wealth**.
+
+## 🛡️ The Solution: Juby Passport
+Juby Passport is a **World Chain native Mini App** that automates financial stability. We transform the World App from a "claim & sell" interface into a "claim & build wealth" platform.
+
+* **Verify:** Uses **World ID** to create a unique "Proof of Savings" reputation.
+* **Stabilize:** One-click automated swap from volatile assets to stable currency (USDC).
+* **Grow:** Direct access to institutional-grade yield vaults.
+
+---
+
+## 🏗️ Architecture & Tech Stack
+
+This project was built from scratch during **ETHGlobal Devconnect 2025**.
+
+### 1. Frontend & Integration (MiniKit)
+* **Framework:** Next.js 14 (App Router) + Tailwind CSS.
+* **SDK:** We used **MiniKit** to build a fully native experience inside World App.
+* **Design:** "Calm Tech" UI generated with **v0** to abstract complexity for non-crypto users.
+
+### 2. Identity (World ID)
+* We enforce **Sybil-Resistance** at the vault level.
+* Every deposit is linked to a verified human, preventing bot farming and establishing a trusted on-chain financial history for future under-collateralized loans.
+
+### 3. Smart Contracts (The "Hack")
+* **Network:** World Chain (Testnet).
+* **Morpho Simulation:** Since Morpho Blue is not yet live on World Chain Testnet, we architected a custom **ERC-4626 Vault** (`MockMorphoVault.sol`).
+* **Yield Simulation:** To demonstrate the value proposition during the hackathon, we implemented a "Yield Injector" logic in the contract that mathematically simulates share price appreciation based on `block.timestamp`. This allows judges to see wealth accumulation in real-time.
+
+---
+
+## 🚀 How to Run Locally
+
+1. **Clone the repo**
+   ```bash
+   git clone [https://github.com/Stefano-Cintioli/juby-app-eth.git](https://github.com/Stefano-Cintioli/juby-app-eth.git)
+   cd juby-app-eth
+Install dependencies
+
+Bash
+
+npm install
+# or
+pnpm install
+Run the development server
+
+Bash
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open in Simulator Open http://localhost:3000 in the MiniKit Simulator to test the World ID verification flow.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🗺️ Roadmap
+Q4 2025 (Now): Hackathon MVP with Mock Vault Architecture.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Q1 2026: Mainnet Launch on World Chain with Live Morpho Blue integration.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Q3 2026: Superchain Aggregation. Leveraging the OP Stack to aggregate liquidity from Base (Aave/Compound) natively without bridging friction.
 
-## Learn More
+👥 Team
+Stefano: Product & Strategy
 
-To learn more about Next.js, take a look at the following resources:
+Renzo: Smart Contracts & Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Joaco: Frontend & MiniKit Integration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Mica: UX/UI Design
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ for the World ecosystem.
