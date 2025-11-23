@@ -1,5 +1,3 @@
-Markdown
-
 # 🛂 Juby Passport
 
 > **Volatility to Stability. Verified on World Chain.**
