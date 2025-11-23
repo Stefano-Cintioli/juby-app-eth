@@ -20,7 +20,6 @@ Result: A generation of high-earners with **zero long-term wealth**.
 Juby Passport is a **World Chain native Mini App** that automates financial stability. We transform the World App from a "claim & sell" interface into a "claim & build wealth" platform.
 
 * **Verify:** Uses **World ID** to create a unique "Proof of Savings" reputation.
-* **Stabilize:** One-click automated swap from volatile assets to stable currency (USDC).
 * **Grow:** Direct access to institutional-grade yield vaults.
 
 ---
@@ -47,22 +46,26 @@ This project was built from scratch during **ETHGlobal Devconnect 2025**.
 
 ## 🚀 How to Run Locally
 
-1. **Clone the repo**
+* 1. **Clone the repo**
+
    ```bash
    git clone [https://github.com/Stefano-Cintioli/juby-app-eth.git](https://github.com/Stefano-Cintioli/juby-app-eth.git)
    cd juby-app-eth
 
-2. **Instal Dependencies**
+* 2. **Instal Dependencies**
+
 npm install
 # or
 pnpm install
 
-3. **Run the developer server**
+* 3. **Run the developer server**
+
 npm run dev
 # or
 pnpm dev
 
-4. **Open in Simulator**
+* 4. **Open in Simulator**
+
 Open http://localhost:3000 in the MiniKit Simulator to test the World ID verification flow.
 
 **🗺️ Roadmap**
